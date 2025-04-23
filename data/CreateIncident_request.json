@@ -1,0 +1,5 @@
+{
+    "short_description": "Created from restassured to validate hamcrest assertions",
+    "description": "Sending the request body as a file",
+	"category": "software"
+}
