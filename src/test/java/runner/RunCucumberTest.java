@@ -1,13 +1,13 @@
 package runner;
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
+import base.ProjectSpecificMethods;
+
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features ="src\\test\\resources\\features\\IncidentManagement.feature", 
-				glue ="stepsDefn",
+@CucumberOptions(features ="C:\\Users\\AneleNqari\\Desktop\\Salesforce\\src\\test\\resources\\features\\SalesforceManagement.feature", 
+				glue ="pages",
 				publish = true,
-				monochrome = true,
-				tags = "@Get or @Smoke")
-public class RunCucumberTest extends AbstractTestNGCucumberTests{
-
+				monochrome = true)
+public class RunCucumberTest extends ProjectSpecificMethods {
+	
 }

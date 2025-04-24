@@ -2,62 +2,50 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-07T11:42:24 IST" name="Default suite" finished-at="2024-07-07T11:42:33 IST" duration-ms="8345">
+  <suite started-at="2025-04-24T13:03:31 SAST" name="Suite" finished-at="2025-04-24T13:04:02 SAST" duration-ms="30532">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@2cb4893b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TC001_Create_SalesLeadUI@1be2019a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-07-07T11:42:24 IST" name="Default test" finished-at="2024-07-07T11:42:33 IST" duration-ms="8345">
-      <class name="runner.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@2cb4893b]" started-at="2024-07-07T11:42:24 IST" name="setUpClass" finished-at="2024-07-07T11:42:25 IST" duration-ms="385" status="PASS">
+    <test started-at="2025-04-24T13:03:31 SAST" name="TestAPI" finished-at="2025-04-24T13:03:37 SAST" duration-ms="5602">
+      <class name="Create_LeadsAPI.Create_Opportunity_API">
+        <test-method signature="runAPICRUD()[pri:0, instance:Create_LeadsAPI.Create_Opportunity_API@147e2ae7]" started-at="2025-04-24T13:03:31 SAST" name="runAPICRUD" finished-at="2025-04-24T13:03:37 SAST" duration-ms="5565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runAPICRUD -->
+      </class> <!-- Create_LeadsAPI.Create_Opportunity_API -->
+    </test> <!-- TestAPI -->
+    <test started-at="2025-04-24T13:03:31 SAST" name="TestUI" finished-at="2025-04-24T13:04:02 SAST" duration-ms="30532">
+      <class name="runner.TC001_Create_SalesLeadUI">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TC001_Create_SalesLeadUI@1be2019a]" started-at="2025-04-24T13:03:31 SAST" name="setUpClass" finished-at="2025-04-24T13:03:31 SAST" duration-ms="270" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7ce30c0b]]>
+                <![CDATA[org.testng.TestRunner@5f20155b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@2cb4893b]" started-at="2024-07-07T11:42:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-07T11:42:29 IST" duration-ms="3953" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC001 Create Incident with no body in the request"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Incident management in Service now API]"]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:runner.TC001_Create_SalesLeadUI@1be2019a]" started-at="2025-04-24T13:03:31 SAST" name="preCondition" finished-at="2025-04-24T13:03:36 SAST" duration-ms="4565" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@2cb4893b]" started-at="2024-07-07T11:42:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-07T11:42:31 IST" duration-ms="2124" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC002 Get Incidents with queryparam"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Incident management in Service now API]"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- preCondition -->
+        <test-method signature="createLead()[pri:0, instance:runner.TC001_Create_SalesLeadUI@1be2019a]" started-at="2025-04-24T13:03:36 SAST" name="createLead" finished-at="2025-04-24T13:04:01 SAST" duration-ms="25283" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@2cb4893b]" started-at="2024-07-07T11:42:31 IST" name="tearDownClass" finished-at="2024-07-07T11:42:33 IST" duration-ms="1813" status="PASS">
+        </test-method> <!-- createLead -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:runner.TC001_Create_SalesLeadUI@1be2019a]" started-at="2025-04-24T13:04:01 SAST" name="postCondition" finished-at="2025-04-24T13:04:02 SAST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TC001_Create_SalesLeadUI@1be2019a]" started-at="2025-04-24T13:04:02 SAST" name="tearDownClass" finished-at="2025-04-24T13:04:02 SAST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.RunCucumberTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- runner.TC001_Create_SalesLeadUI -->
+    </test> <!-- TestUI -->
+  </suite> <!-- Suite -->
 </testng-results>
